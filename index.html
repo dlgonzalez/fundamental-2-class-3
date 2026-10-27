@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Fundamental 2 · Class 3 | Likes, Interests & Questions</title><style>
+:root{--ink:#20243a;--muted:#626981;--paper:#f8f7ff;--card:#fff;--line:#e3e0f2;--purple:#6246ea;--purple2:#efeaff;--pink:#ff6f91;--yellow:#ffd166;--teal:#2aa89b;--green:#18794e;--red:#b42318;--shadow:0 10px 28px rgba(42,35,94,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{background:linear-gradient(125deg,#38227d,#6246ea 55%,#a855f7);color:white;padding:34px 20px 30px;position:relative;overflow:hidden}
+header:after{content:"🎮 🎧 🛹 🎾";position:absolute;right:4%;bottom:8px;font-size:clamp(1.6rem,4vw,3rem);opacity:.23;letter-spacing:.18em}
+.hero{max-width:1100px;margin:auto;position:relative;z-index:1}.eyebrow{text-transform:uppercase;letter-spacing:.15em;font-weight:800;font-size:.78rem;opacity:.9}.hero h1{font-size:clamp(2.1rem,5vw,3.8rem);line-height:1.05;margin:.35em 0}.hero p{max-width:760px;margin:0;font-size:1.08rem}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.chip{background:#ffffff22;border:1px solid #ffffff44;border-radius:999px;padding:6px 11px;font-size:.88rem}
+main{max-width:1100px;margin:20px auto;padding:0 16px 50px}.overview{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px}.metric,.mission,.panel,.activity{background:var(--card);border:1px solid var(--line);border-radius:17px;box-shadow:var(--shadow)}.metric{padding:13px 16px}.metric strong{display:block;font-size:1.1rem}.metric span{color:var(--muted);font-size:.88rem}.mission{padding:17px 19px;margin-bottom:18px;background:linear-gradient(100deg,#fff,#f1edff)}.mission strong{color:var(--purple)}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.navbtn,.btn{border:0;border-radius:11px;padding:10px 14px;font:inherit;font-weight:750;cursor:pointer;transition:transform .15s,filter .15s}.navbtn{background:#eae6ff;color:#3f2b99}.navbtn.active{background:var(--purple);color:white}.btn{background:var(--purple);color:white}.btn.secondary{background:#eeebf8;color:#392e68}.btn.teal{background:var(--teal)}.btn.pink{background:var(--pink);color:#45112a}.btn.yellow{background:var(--yellow);color:#3c2c00}.btn:disabled{opacity:.45;cursor:not-allowed}.btn:hover,.navbtn:hover{filter:brightness(.97);transform:translateY(-1px)}
+.panel{display:none;padding:clamp(16px,3vw,28px);margin-bottom:18px}.panel.active{display:block}.kicker{font-size:.78rem;letter-spacing:.12em;font-weight:850;color:var(--purple);text-transform:uppercase}.panel h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2;margin:.25em 0}.sub{color:var(--muted);margin-top:0}.activity{padding:17px;margin:15px 0;box-shadow:none}.activity h3{margin:.1em 0 .5em}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.callout{background:#f0edff;border-left:4px solid var(--purple);padding:13px 15px;border-radius:10px;margin:12px 0}.callout.good{background:#e8f7ef;border-color:var(--teal)}.callout.warn{background:#fff4d6;border-color:#e4a900}.small{font-size:.9rem;color:var(--muted)}.tag{display:inline-block;border-radius:7px;background:#f1effb;padding:3px 8px;font-size:.8rem;font-weight:800;color:#4a3b93}
+input[type=text],textarea,select{width:100%;font:inherit;border:1px solid #d5d0e8;border-radius:10px;padding:10px;background:#fff;color:var(--ink)}textarea{min-height:90px;resize:vertical}label{display:block;font-weight:700;margin:8px 0 5px}.row{display:flex;align-items:center;gap:9px;flex-wrap:wrap}.spacer{flex:1}.feedback{display:none;border-radius:10px;padding:11px 13px;margin:12px 0;background:#f0edff}.feedback.show{display:block}.feedback.good{background:#e7f7ed;color:#155b39}.feedback.bad{background:#fff0ef;color:#8b1e17}
+.options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:12px 0}.option{padding:12px;border:1px solid var(--line);border-radius:10px;background:#fff;text-align:left;font:inherit;cursor:pointer}.option:hover{border-color:var(--purple)}.option.correct{background:#e7f7ed;border-color:#50ad7a}.option.incorrect{background:#fff0ef;border-color:#e88b85}.progress{height:8px;background:#ece9f7;border-radius:999px;overflow:hidden;margin:10px 0}.progress span{height:100%;width:0;background:linear-gradient(90deg,var(--purple),var(--pink));display:block;transition:width .25s}
+.wordbank{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0}.word{background:#fff1f5;border:1px solid #ffc6d3;border-radius:999px;padding:6px 10px;font-weight:700}.sortzone{min-height:60px;padding:12px;border:2px dashed #cbc4e8;border-radius:12px;background:#faf9ff}.listclean{padding-left:22px}.reveal{display:none}.reveal.show{display:block}.bigprompt{font-size:1.45rem;font-weight:850;margin:10px 0}.statline{display:flex;gap:10px;flex-wrap:wrap}.stat{background:#f2efff;border-radius:9px;padding:6px 10px;font-weight:750;font-size:.9rem}
+table{border-collapse:collapse;width:100%;margin:10px 0}th,td{padding:10px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:#f0edff}.answerkey{display:none;background:#e8f7ef;padding:12px;border-radius:10px;margin-top:10px}.answerkey.show{display:block}
+footer{text-align:center;color:var(--muted);padding:25px 10px;font-size:.9rem}
+@media(max-width:720px){.overview,.grid2,.grid3{grid-template-columns:1fr}.options{grid-template-columns:1fr}.navbtn{flex:1 1 42%}header{padding-top:26px}main{padding-left:10px;padding-right:10px}.panel{padding:15px}}
+
+/* Added visual cards for the beginner-friendly present-simple lesson */
+.grammar-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:14px 0}.grammar-card{background:linear-gradient(145deg,rgba(124,92,255,.10),rgba(34,211,238,.09));border:1px solid var(--line,#ddd);border-radius:16px;padding:16px;box-shadow:0 5px 16px rgba(20,20,50,.06)}.grammar-card h4{margin:5px 0 8px;font-size:1.02rem}.grammar-card p{margin:6px 0}.grammar-card .emoji{font-size:1.8rem}.activity-menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin:12px 0}.activity-menu>div{padding:13px;border-radius:13px;background:rgba(124,92,255,.08);border:1px solid var(--line,#ddd);line-height:1.65}details{margin-top:10px;padding:10px;background:rgba(255,255,255,.55);border-radius:9px}summary{cursor:pointer;font-weight:700}table{display:none}
+.warm-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px}.warm-card{border:1px solid var(--line,#ddd);border-radius:12px;padding:12px;background:var(--card,#fff);display:flex;flex-direction:column;gap:10px}.warm-card .row{gap:6px;flex-wrap:wrap}.warm-card .btn{font-size:.82rem;padding:8px 10px}
+
+.gamecard{padding:18px;border:2px solid #e3e0f2;border-radius:16px;background:linear-gradient(135deg,#fff,#f7f3ff)}.table-wrap{overflow-x:auto}.listening-table{display:table;min-width:650px}.listening-table textarea{min-height:150px}.gamecard .options{margin-top:16px}.hidden{display:none!important}.unlock-note{background:#fff4d6;border-radius:12px;padding:12px}.listening-table th{text-align:center}
+
+/* Class 3 enhancements */
+.prompt-card{background:linear-gradient(135deg,#fff,#f5f1ff);border:2px solid #e3def8;border-radius:18px;padding:20px;margin:14px 0}
+.question-pill{display:inline-block;padding:5px 10px;border-radius:999px;background:#eee9ff;color:#4a329c;font-weight:800;font-size:.8rem;margin:3px}
+.example{border-left:4px solid var(--teal);background:#eaf8f5;border-radius:9px;padding:12px 15px;margin:10px 0}
+.writing-step{border:1px solid var(--line);border-radius:13px;padding:13px;background:#fff;margin:10px 0}
+.writing-step h4{margin:0 0 7px}
+.smallcaps{font-size:.75rem;font-weight:850;letter-spacing:.08em;text-transform:uppercase;color:var(--purple)}
+.story-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.story-grid>div{padding:13px;border:1px solid var(--line);border-radius:12px;background:#fbfaff}
+.board-frame{width:100%;height:min(78vh,850px);border:0;border-radius:14px;background:#fff}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+</style></head><body>
+<header><div class="hero"><div class="eyebrow">English · Fundamental 2 · Class 3</div><h1>Likes, Interests & Questions 💬</h1><p>Ask about interests, share what you enjoy, and describe the activities you and your family like or dislike.</p><div class="chips"><span class="chip">⏱ 90–105 minutes + transitions</span><span class="chip">🎮 Interactive game</span><span class="chip">🎲 Breakout rooms</span><span class="chip">✍️ Personal writing</span></div></div></header>
+<main><div class="overview"><div class="metric"><strong>🎯 Today’s goal</strong><span>Ask and answer questions about likes and interests.</span></div><div class="metric"><strong>🧠 Language focus</strong><span>Do/does questions, short answers, affirmative and negative statements.</span></div><div class="metric"><strong>🏅 Progress</strong><span><b id="xp">0</b> XP · <b id="completed">0</b> achievements</span></div></div>
+<div class="mission"><strong>Welcome to Class 3!</strong> In the last two classes, you explored activities and practised affirmative and negative sentences. Today, you will practise asking questions, learn from a model text, write about your own interests and family, and perform a conversation.</div>
+
+<nav aria-label="Class sections">
+<button class="navbtn active" data-panel="p0">1 · Question Quest</button>
+<button class="navbtn" data-panel="p1">2 · Board Game</button>
+<button class="navbtn" data-panel="p2">3 · Reading & Writing</button>
+<button class="navbtn" data-panel="p3">4 · Conversation Studio</button>
+<button class="navbtn" data-panel="p4">5 · Wrap-up</button>
+</nav>
+
+<section class="panel active" id="p0">
+<div class="kicker">Mission 1 · 15 minutes</div><h2>🎮 Question Quest</h2>
+<p class="sub">Play 20 rounds to practise affirmative sentences, negatives, questions, and short answers. Choose the correct option or build the sentence in the right order.</p>
+<div class="activity">
+<div class="row"><span class="stat" id="qRound">Round 1 / 20</span><span class="spacer"></span><span class="stat" id="qScore">Score: 0</span></div>
+<div class="progress"><span id="qProgress"></span></div>
+<div class="prompt-card"><div class="tag" id="qType">CHOOSE THE CORRECT FORM</div><div class="bigprompt" id="qPrompt"></div><div id="qOptions" class="options"></div>
+<div id="qTextArea" style="display:none"><label for="qText">Write the complete sentence</label><input id="qText" type="text" placeholder="Type your answer here"></div>
+<div id="qFeedback" class="feedback" aria-live="polite"></div>
+<div class="row"><button class="btn teal" id="qCheck" style="display:none">Check answer</button><button class="btn" id="qNext" disabled>Next round →</button><button class="btn secondary" id="qRestart">Restart game</button></div></div>
+<div class="callout"><b>Quick reminder:</b> <span class="question-pill">Do + I/you/we/they + base verb?</span> <span class="question-pill">Does + he/she/it + base verb?</span><br>Example: “Does she like music?” — “Yes, she does.” Not “Does she likes…?”</div>
+</div>
+<div class="callout warn"><b>➡️ Transition:</b> Great work! Now use these questions with real people. In your breakout room, play the board game and learn about your classmates' interests.</div>
+</section>
+
+<section class="panel" id="p1">
+<div class="kicker">Mission 2 · 15–20 minutes</div><h2>🎲 Breakout Room: Likes & Interests Board Game</h2>
+<p class="sub">Work in groups of 3–4. Open the board game below, take turns, and speak in complete sentences.</p>
+<div class="activity"><h3>Your team mission</h3><ul class="listclean"><li>Ask at least three questions during your turns.</li><li>Give complete answers, not only “yes” or “no”.</li><li>Ask at least one question about a family member.</li><li>Remember one interesting fact about a classmate.</li></ul>
+<div class="example"><b>Sample exchange</b><br>A: “Do you enjoy playing video games?”<br>B: “Yes, I do. I love playing them with my brother.”<br>A: “Does your brother like sports?”<br>B: “No, he doesn't. He prefers video games.”</div></div>
+<div class="activity"><h3>Play the game</h3>
+<iframe class="board-frame" title="Interactive likes and interests questions board game" src="https://sites.google.com/view/interactive-questions-game/full-page-embed" loading="lazy" allowfullscreen></iframe>
+<p class="small">If the game doesn't load inside the lesson, use the button to open it in a new tab.</p>
+<a class="btn" href="https://sites.google.com/view/interactive-questions-game/full-page-embed" target="_blank" rel="noopener">Open board game in a new tab ↗</a>
+</div>
+<div class="activity"><h3>📝 Remember one thing</h3><label for="classmateFact">One interesting thing I learned about a classmate:</label><textarea id="classmateFact" placeholder="My classmate enjoys… / His sister likes…"></textarea>
+<div class="example"><b>Sample:</b> “Laura enjoys dancing, and her brother likes playing soccer.”</div></div>
+<div class="callout warn"><b>➡️ Transition:</b> You’ve asked and answered questions. Now let’s use a model text to learn how to write a short, interesting description of our own interests and our family’s interests.</div>
+</section>
+
+<section class="panel" id="p2">
+<div class="kicker">Mission 3 · 25 minutes</div><h2>📚 Reading & Writing Studio: My World of Interests</h2>
+<p class="sub">Read a model, notice how the writer develops ideas, practise present-simple forms, and create a paragraph of your own.</p>
+<div class="activity"><h3>1. Read the model</h3>
+<div class="prompt-card"><div class="smallcaps">A person's world of interests</div>
+<p>There are so many things I love to do, but I am sure I love singing. It is, without a doubt, my favourite activity. I sing horribly, but I still like to do it when I am driving or when I am in the shower. I also like doing exercise. I love waking up early and smelling the cold morning air. I love going out for a morning run and feeling the cold air on my face. I don’t like running when it is hot, for example, during summer, but I love feeling my legs exhausted after a few kilometres.</p>
+<p>There are many other things I don’t like when I am running. I don't like watching for cars when I cross the streets because it makes me slower.</p></div>
+<div class="callout"><b>Notice:</b> The text includes some more advanced forms. Today, focus on the present-simple verbs and the way the writer adds examples, reasons, and details. You do not need to master every structure in this text.</div>
+</div>
+<div class="activity"><h3>2. Reading detective 🔎</h3><p>Answer the questions. Then compare with a partner.</p>
+<div id="readQs">
+<div class="writing-step"><b>1. What is the writer’s favourite activity?</b><div class="options"><button class="option" data-rq="0" data-c="0">Doing exercise</button><button class="option" data-rq="0" data-c="1">Singing</button><button class="option" data-rq="0" data-c="2">Running</button></div><div class="feedback" id="rf0"></div></div>
+<div class="writing-step"><b>2. Name one thing the writer likes doing.</b><div class="options"><button class="option" data-rq="1" data-c="0">Running in the morning</button><button class="option" data-rq="1" data-c="1">Driving in summer</button><button class="option" data-rq="1" data-c="2">Watching cars</button></div><div class="feedback" id="rf1"></div></div>
+<div class="writing-step"><b>3. When does the writer dislike running?</b><div class="options"><button class="option" data-rq="2" data-c="0">When it is hot</button><button class="option" data-rq="2" data-c="1">When it is cold</button><button class="option" data-rq="2" data-c="2">When it is early</button></div><div class="feedback" id="rf2"></div></div>
+<div class="writing-step"><b>4. Why doesn't the writer like watching for cars?</b><div class="options"><button class="option" data-rq="3" data-c="0">It makes the run slower</button><button class="option" data-rq="3" data-c="1">Cars are too loud</button><button class="option" data-rq="3" data-c="2">It is boring</button></div><div class="feedback" id="rf3"></div></div>
+</div>
+<div class="callout good"><b>Pair discussion:</b> Which activities do you have in common with the writer? Which activities are different for you?</div>
+</div>
+<div class="activity"><h3>3. Grammar workout: Ann's profile</h3><p>Complete each sentence with the correct present-simple form of the verb in brackets. Check the answers when you finish.</p>
+<div class="writing-step">1. Ann Taylor <input class="ann" id="ann0" placeholder="(live)" aria-label="Ann lives in Paris"> in Paris.</div>
+<div class="writing-step">2. She <input class="ann" id="ann1" placeholder="(play)" aria-label="She plays in a band"> in a band.</div>
+<div class="writing-step">3. She also <input class="ann" id="ann2" placeholder="(like)" aria-label="She likes sport"> sport.</div>
+<div class="writing-step">4. I <input class="ann" id="ann3" placeholder="(go)" aria-label="I go swimming"> swimming and I <input class="ann" id="ann4" placeholder="(play)" aria-label="I play tennis"> tennis and basketball.</div>
+<div class="writing-step">5. My sister, Karen, <input class="ann" id="ann5" placeholder="(watch)" aria-label="Karen watches football"> football on television, but she <input class="ann" id="ann6" placeholder="(not play)" aria-label="she does not play football"> it.</div>
+<div class="writing-step">6. She also <input class="ann" id="ann7" placeholder="(read)" aria-label="She reads"> a lot.</div>
+<div class="writing-step">7. I <input class="ann" id="ann8" placeholder="(not read)" aria-label="I do not read"> a lot, but I <input class="ann" id="ann9" placeholder="(listen to)" aria-label="I listen to music"> music and I <input class="ann" id="ann10" placeholder="(collect)" aria-label="I collect stickers"> stickers.</div>
+<div class="row"><button class="btn teal" id="annCheck">Check my answers</button><button class="btn secondary" id="annReveal">Show answer key</button><span class="stat" id="annScore">Score: — / 11</span></div><div class="feedback" id="annFeedback"></div>
+<div class="answerkey" id="annKey"><b>Answer key:</b> 1 lives · 2 plays · 3 likes · 4 go · 5 play · 6 watches · 7 doesn't play · 8 reads · 9 don't read · 10 listen to · 11 collect.<br><b>Remember:</b> he/she/it takes -s/-es in affirmative sentences. For negatives, use don't/doesn't + base verb.</div>
+</div>
+<div class="activity"><h3>4. Create your own paragraph ✍️</h3><p>Write 8–10 sentences about your interests and your family. Use the model to help you, but make the ideas your own.</p>
+<div class="story-grid"><div><b>❤️ My favourite activity</b><p>I really like… / My favourite activity is…</p></div><div><b>🎧 More interests</b><p>I also enjoy… / I love…</p></div><div><b>🚫 Something I dislike</b><p>I don't like… because…</p></div><div><b>👨‍👩‍👧 Family</b><p>My mother likes… / My brother doesn't like…</p></div><div><b>🕒 When / with whom</b><p>I do it when… / I do it with…</p></div><div><b>🔗 Connect ideas</b><p>and · but · because · for example</p></div></div>
+<label for="myParagraph">My World of Interests (8–10 sentences)</label><textarea id="myParagraph" rows="8" placeholder="There are many things I like to do, but my favourite activity is…"></textarea>
+<div class="row"><button class="btn teal" id="paragraphCheck">Check my writing checklist</button><button class="btn secondary" id="paragraphCopy">Copy my paragraph</button></div><div class="feedback" id="paragraphFeedback"></div>
+<div class="example"><b>Sample answer:</b> “There are many things I like to do, but my favourite activity is listening to music. I enjoy listening to music when I travel by bus. I also love watching movies with my family. I don't like playing tennis because it is difficult for me. My brother likes playing soccer, but I don't enjoy it very much. My mother loves cooking, and my father enjoys watching football. On weekends, we like spending time together.”</div>
+</div>
+<div class="callout warn"><b>➡️ Transition:</b> You now have ideas about your own interests and your family. Next, work with a partner to turn these ideas into a natural conversation.</div>
+</section>
+
+<section class="panel" id="p3">
+<div class="kicker">Mission 4 · 30 minutes</div><h2>🗣️ Conversation Studio: Let's Get to Know Each Other</h2>
+<p class="sub">Work in pairs. Create a conversation between two people meeting at a club, course, or social event. Use the language from today's lesson.</p>
+<div class="activity"><h3>Conversation checklist</h3><ul class="listclean"><li>Start with a greeting and introduction.</li><li>Include at least four questions with <b>do/does</b>.</li><li>Include affirmative and negative answers.</li><li>Ask about one family member's interests.</li><li>React naturally: <i>Really? That's interesting! Me too! Not me!</i></li><li>Finish the conversation naturally.</li></ul></div>
+<div class="activity"><h3>Build your dialogue</h3><div class="writing-step"><label for="dialogueA">Student A's lines</label><textarea id="dialogueA" rows="4" placeholder="A: Hi! What do you like doing in your free time?"></textarea></div>
+<div class="writing-step"><label for="dialogueB">Student B's lines</label><textarea id="dialogueB" rows="4" placeholder="B: I enjoy… What about you?"></textarea></div>
+<div class="writing-step"><label for="dialogueFull">Put the conversation together here</label><textarea id="dialogueFull" rows="8" placeholder="A: …&#10;B: …"></textarea></div>
+<div class="row"><button class="btn teal" id="dialogueCheck">Check my conversation</button><button class="btn secondary" id="dialogueCopy">Copy conversation</button></div><div class="feedback" id="dialogueFeedback"></div>
+</div>
+<div class="activity"><h3>🌟 Sample conversation</h3><div class="example"><b>Alex:</b> Hi! I'm Alex. What do you like doing in your free time?<br><b>Sam:</b> I enjoy playing basketball and listening to music. What about you?<br><b>Alex:</b> I love listening to music, too, but I don't like basketball.<br><b>Sam:</b> Really? Does your family enjoy sports?<br><b>Alex:</b> Yes, they do. My dad loves football, but my sister doesn't like sports at all.<br><b>Sam:</b> That's interesting! Do you enjoy watching movies?<br><b>Alex:</b> Yes, I do. I love comedies. What kind of movies do you like?<br><b>Sam:</b> I like action movies. Maybe we can watch one sometime!</div></div>
+<div class="activity"><h3>🎭 Rehearse and perform</h3><p>Practise twice. The first time, use your notes. The second time, look up more often and try to sound natural. Then present your conversation to the class.</p><div class="callout good"><b>Peer feedback:</b> Did they ask clear questions? Did they use do/does correctly? Did they answer in complete sentences? Did they talk about a family member?</div></div>
+<div class="callout warn"><b>➡️ Transition:</b> You’ve used the language to communicate. Let’s finish with a short challenge to show what you can do independently.</div>
+</section>
+
+<section class="panel" id="p4">
+<div class="kicker">Mission 5 · 8 minutes</div><h2>🏁 Wrap-up: Exit Challenge</h2>
+<p class="sub">Complete these three mini-missions independently. Use the present simple to show what you learned today.</p>
+<div class="activity"><h3>Mission A — Make a question</h3><p>Put the words in order.</p><div class="example">you / do / enjoy / what / doing</div><input id="exitQ" placeholder="Write the question"><div class="feedback" id="exitQFeedback"></div></div>
+<div class="activity"><h3>Mission B — Write a negative sentence</h3><p>Write one true sentence about an activity you don't like.</p><input id="exitN" placeholder="I don't like…"><div class="feedback" id="exitNFeedback"></div></div>
+<div class="activity"><h3>Mission C — Write about another person</h3><p>Write one sentence about a family member's interests.</p><input id="exitF" placeholder="My sister likes… / My dad doesn't like…"><div class="feedback" id="exitFFeedback"></div></div>
+<button class="btn teal" id="exitCheck">Check my exit ticket</button><div class="feedback" id="exitSummary"></div>
+<div class="example"><b>Sample answers:</b> “What do you enjoy doing?” · “I don't like playing tennis.” · “My sister enjoys dancing.”</div>
+</div>
+</section>
+
+<footer>Fundamental 2 · Class 3 · Likes, Interests & Questions · Ask, listen, share, and connect.</footer></main><script>
+const xpKeys=new Set();let xp=0;
+function award(k,n){if(!xpKeys.has(k)){xpKeys.add(k);xp+=n;document.getElementById('xp').textContent=xp;document.getElementById('completed').textContent=xpKeys.size;}}
+function showMsg(id,msg,type){const el=document.getElementById(id);if(el){el.textContent=msg;el.className='feedback show '+(type||'');}}
+function activate(id){document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.panel===id));window.scrollTo({top:0,behavior:'smooth'});}
+document.querySelectorAll('.navbtn').forEach(b=>b.addEventListener('click',()=>activate(b.dataset.panel)));
+const qs=[
+{t:'Choose the correct question',q:'___ you like listening to music?',a:['Do','Does','Are'],c:0,e:'Use Do with you: Do you like…?'},
+{t:'Choose the correct question',q:'___ your sister enjoy dancing?',a:['Do','Does','Is'],c:1,e:'Your sister = she, so use Does.'},
+{t:'Complete the short answer',q:'Do they like sports? Yes, they ___.',a:['do','does','are'],c:0,e:'Short answer: Yes, they do.'},
+{t:'Find the correct sentence',q:'Choose the correct sentence.',a:['Does he likes swimming?','Does he like swimming?','Do he like swimming?'],c:1,e:'After does, use the base verb: like.'},
+{t:'Choose the negative',q:'She ___ like tennis.',a:["don't","doesn't","isn't"],c:1,e:'She + doesn’t + base verb.'},
+{t:'Unscramble',q:'Put the words in order: “you / do / enjoy / what / doing”',text:'What do you enjoy doing?',e:'The question begins with What + do + you + enjoy + doing.'},
+{t:'Choose the correct short answer',q:'Does Brandon like biking? No, he ___.',a:["don't","doesn't","isn't"],c:1,e:'Does he…? No, he doesn’t.'},
+{t:'Fix the mistake',q:'Choose the correct version.',a:['Do she like movies?','Does she likes movies?','Does she like movies?'],c:2,e:'Use does + subject + base verb.'},
+{t:'Choose the correct form',q:'My parents ___ watching movies.',a:['enjoys','enjoy','enjoying'],c:1,e:'My parents = they, so use enjoy.'},
+{t:'Make it negative',q:'“I like playing tennis.” Choose the negative.',a:["I don't like playing tennis.","I doesn't like playing tennis.","I don't likes playing tennis."],c:0,e:'I + don’t + base verb.'},
+{t:'Choose the correct question',q:'___ your friends enjoy hiking?',a:['Does','Do','Are'],c:1,e:'Your friends = they, so use Do.'},
+{t:'Complete the short answer',q:'Does she like reading? Yes, she ___.',a:['do','does','likes'],c:1,e:'Yes, she does.'},
+{t:'Find the mistake',q:'Choose the correct sentence.',a:['He doesn’t likes dancing.','He doesn’t like dancing.','He don’t like dancing.'],c:1,e:'After doesn’t, use like.'},
+{t:'Choose the correct question',q:'___ your dad like cooking?',a:['Do','Does','Is'],c:1,e:'Your dad = he, so use Does.'},
+{t:'Unscramble',q:'Put the words in order: “does / what / she / like”',text:'What does she like?',e:'What + does + she + base verb.'},
+{t:'Choose the correct answer',q:'Do you enjoy video games? No, I ___.',a:["don't","doesn't","am not"],c:0,e:'No, I don’t.'},
+{t:'Choose the correct sentence',q:'My brother ___ like running.',a:["don't","doesn't","isn't"],c:1,e:'My brother = he, so doesn’t.'},
+{t:'Choose the correct question',q:'___ they like playing badminton?',a:['Does','Do','Are'],c:1,e:'They + Do…?'},
+{t:'Choose the correct form',q:'Karen ___ watching football.',a:['like','likes','liking'],c:1,e:'Karen = she, so likes.'},
+{t:'Choose the best response',q:'Do you like hiking?',a:['Yes, I do.','Yes, I likes.','Yes, I am.'],c:0,e:'Use do in the short answer.'}
+];
+let qi=0,score=0,locked=false;
+function renderQ(){let q=qs[qi];document.getElementById('qRound').textContent=`Round ${qi+1} / ${qs.length}`;document.getElementById('qScore').textContent=`Score: ${score}`;document.getElementById('qProgress').style.width=`${qi/qs.length*100}%`;document.getElementById('qType').textContent=q.t.toUpperCase();document.getElementById('qPrompt').textContent=q.q;document.getElementById('qFeedback').className='feedback';document.getElementById('qFeedback').textContent='';document.getElementById('qNext').disabled=true;locked=false;const box=document.getElementById('qOptions'),area=document.getElementById('qTextArea'),check=document.getElementById('qCheck');box.innerHTML='';if(q.text){box.style.display='none';area.style.display='block';check.style.display='inline-block';document.getElementById('qText').value='';}else{box.style.display='grid';area.style.display='none';check.style.display='none';q.a.forEach((a,i)=>{let b=document.createElement('button');b.className='option';b.textContent=a;b.onclick=()=>answerQ(i===q.c,b);box.appendChild(b);});}}
+function answerQ(good,b){if(locked)return;locked=true;if(good){score++;award('question'+qi,2);if(b)b.classList.add('correct');}else if(b)b.classList.add('incorrect');showMsg('qFeedback',(good?'Correct! ':'Try again next time. ')+qs[qi].e,good?'good':'bad');document.getElementById('qScore').textContent=`Score: ${score}`;document.getElementById('qNext').disabled=false;}
+document.getElementById('qCheck').addEventListener('click',()=>{let q=qs[qi];let val=document.getElementById('qText').value.trim().replace(/[.!?]+$/,'').replace(/\s+/g,' ').toLowerCase();let ans=q.text.replace(/[.!?]+$/,'').toLowerCase();answerQ(val===ans,null);if(val!==ans)showMsg('qFeedback','Model answer: '+q.text+' — '+q.e,'bad');});
+document.getElementById('qNext').addEventListener('click',()=>{if(qi<qs.length-1){qi++;renderQ();}else{document.getElementById('qProgress').style.width='100%';showMsg('qFeedback',`Quest complete! Score: ${score}/${qs.length}. Now use your questions with classmates.`,'good');document.getElementById('qNext').disabled=true;award('questComplete',10);}});
+document.getElementById('qRestart').addEventListener('click',()=>{qi=0;score=0;renderQ();});renderQ();
+const readCorrect=[1,0,0,0];
+document.querySelectorAll('[data-rq]').forEach(b=>b.addEventListener('click',()=>{let idx=+b.dataset.rq,choice=+b.dataset.c,good=choice===readCorrect[idx];document.querySelectorAll(`[data-rq="${idx}"]`).forEach(x=>x.classList.remove('correct','incorrect'));b.classList.add(good?'correct':'incorrect');const explain=['Singing is the writer’s favourite activity.','The writer loves going out for a morning run.','The writer doesn’t like running when it is hot.','The writer says watching for cars makes the run slower.'];showMsg('rf'+idx,(good?'Correct! ':'Not quite. ')+explain[idx],good?'good':'bad');if(good)award('read'+idx,2);}));
+const annAnswers=['lives','plays','likes','go','play','watches',"doesn't play",'reads',"don't read",'listen to','collect'];
+document.getElementById('annCheck').addEventListener('click',()=>{let correct=0;const ids=['ann0','ann1','ann2','ann3','ann4','ann5','ann6','ann7','ann8','ann9','ann10'];ids.forEach((id,i)=>{let v=document.getElementById(id).value.trim().toLowerCase().replace(/\s+/g,' ');let ok=v===annAnswers[i]||((i===6||i===8)&&v===annAnswers[i].replace("'",'’'));document.getElementById(id).style.borderColor=ok?'#2aa89b':'#e88b85';if(ok)correct++;});document.getElementById('annScore').textContent=`Score: ${correct} / 11`;showMsg('annFeedback',correct===11?'Perfect! You used the present simple correctly.':'Review the highlighted answers. Remember: third-person -s in affirmative sentences; don’t/doesn’t + base verb in negatives.',correct===11?'good':'bad');if(correct===11)award('annPerfect',5);});
+document.getElementById('annReveal').addEventListener('click',()=>document.getElementById('annKey').classList.toggle('show'));
+document.getElementById('paragraphCheck').addEventListener('click',()=>{let t=document.getElementById('myParagraph').value.trim();let sentences=t.split(/[.!?]+/).filter(x=>x.trim()).length;let words=t.split(/\s+/).filter(Boolean).length;let msg=`You have ${sentences} sentences and about ${words} words. Checklist: include a favourite activity, one thing you dislike, at least one family member, and a reason or detail. Check he/she/it verbs and don't/doesn't + base verb.`;showMsg('paragraphFeedback',msg,sentences>=8?'good':'');if(sentences>=8)award('paragraphDraft',5);});
+document.getElementById('paragraphCopy').addEventListener('click',()=>copyText('myParagraph'));
+document.getElementById('dialogueCheck').addEventListener('click',()=>{let t=document.getElementById('dialogueFull').value.trim();let count=(t.match(/\?/g)||[]).length;let words=t.split(/\s+/).filter(Boolean).length;showMsg('dialogueFeedback',`Your dialogue has ${count} question marks and about ${words} words. Check: 4+ questions, yes/no answers, a family member, positive and negative sentences, and a natural ending.`,count>=4&&words>=60?'good':'');if(count>=4&&words>=60)award('dialogueDraft',5);});
+document.getElementById('dialogueCopy').addEventListener('click',()=>copyText('dialogueFull'));
+function copyText(id){const el=document.getElementById(id);el.select();try{document.execCommand('copy');}catch(e){}}
+document.getElementById('exitCheck').addEventListener('click',()=>{let q=document.getElementById('exitQ').value.trim().toLowerCase().replace(/[.!?]+$/,'').replace(/\s+/g,' ');let qok=['what do you enjoy doing','what do you enjoy doing'].includes(q);showMsg('exitQFeedback',qok?'Correct question!':'Model answer: What do you enjoy doing?',qok?'good':'bad');let n=document.getElementById('exitN').value.trim();let nok=/\b(don't|do not|doesn't|does not)\b/i.test(n);showMsg('exitNFeedback',nok?'Good: you used a negative form.':'Try using don’t/doesn’t + base verb, e.g. “I don’t like playing tennis.”',nok?'good':'bad');let f=document.getElementById('exitF').value.trim();let fok=/\b(likes|loves|enjoys|hates|doesn't|does not)\b/i.test(f);showMsg('exitFFeedback',fok?'Good: your sentence includes a third-person preference form.':'Try “My sister likes dancing” or “My dad doesn’t like running.”',fok?'good':'bad');showMsg('exitSummary','Exit ticket checked. Review the feedback above before you finish.','good');if(qok&&nok&&fok)award('exitTicket',10);});
+</script></body></html>
